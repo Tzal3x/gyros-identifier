@@ -13,6 +13,7 @@
 		F94A610727997AE600F89F41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94A610527997AE600F89F41 /* Main.storyboard */; };
 		F94A610927997AE700F89F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F94A610827997AE700F89F41 /* Assets.xcassets */; };
 		F94A610C27997AE700F89F41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F94A610A27997AE700F89F41 /* LaunchScreen.storyboard */; };
+		F9FBA4DE2799C0B700A82BD9 /* GyrosClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F9FBA4DD2799C0B700A82BD9 /* GyrosClassifier 1.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F94A610827997AE700F89F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F94A610B27997AE700F89F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F94A610D27997AE700F89F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FBA4DD2799C0B700A82BD9 /* GyrosClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "GyrosClassifier 1.mlmodel"; path = "../../GyrosClassifier 1.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F94A610827997AE700F89F41 /* Assets.xcassets */,
 				F94A610A27997AE700F89F41 /* LaunchScreen.storyboard */,
 				F94A610D27997AE700F89F41 /* Info.plist */,
+				F9FBA4DD2799C0B700A82BD9 /* GyrosClassifier 1.mlmodel */,
 			);
 			path = "gyros-identifier";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				F94A610427997AE600F89F41 /* ViewController.swift in Sources */,
 				F94A610027997AE600F89F41 /* AppDelegate.swift in Sources */,
 				F94A610227997AE600F89F41 /* SceneDelegate.swift in Sources */,
+				F9FBA4DE2799C0B700A82BD9 /* GyrosClassifier 1.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
