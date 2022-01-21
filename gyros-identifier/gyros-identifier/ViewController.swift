@@ -38,7 +38,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
     private func detect(image: CIImage) {
-        guard let model = try? VNCoreMLModel(for: GyrosClassifier_1().model) else {
+        guard let model = try? VNCoreMLModel(for: GyrosClassifier3().model) else {
             fatalError("Loading CoreML Model Failed.")
         }
         
@@ -49,7 +49,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
                     }
                 if let firstResult = results.first {
                     print(firstResult)
-                    if firstResult.identifier.contains("Gyros") {
+                    if firstResult.identifier.contains("gyros") ||
+                        firstResult.identifier.contains("breakfast_burrito"){
                         self.navigationItem.title = "Gyros ✅"
                     } else {
                         self.navigationItem.title = "Not Gyros ❌"
