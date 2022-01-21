@@ -13,3 +13,9 @@ The pretrained model used was the [MLImageClassifier](https://developer.apple.co
 The dataset that was used was a mix of the [Food-101 dataset from Kaggle](https://www.kaggle.com/kmader/food41) and images of gyros that I downloaded from the internet, mostly from random sources.
 
 To split the dataset to Training and Test data I used the `dataset_creator.sh` bash script. Then I used the [CreateML](https://developer.apple.com/machine-learning/create-ml/) tool to train my model, and finally export it and add it to my XCode project.
+
+## Examples
+
+ Example 1             |  Example 2
+:---------------------:|:-------------------------:
+![gyros_identifier_example_1](https://user-images.githubusercontent.com/33265837/150557206-26aa5778-bdfb-40a3-a471-bd2ab482a101.jpeg)  | ![gyros_identifier_example_3](https://user-images.githubusercontent.com/33265837/150557220-b3a72bb1-c2f8-4963-b317-4e3c841c5f5d.jpeg)
