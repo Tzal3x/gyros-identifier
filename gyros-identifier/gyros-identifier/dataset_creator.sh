@@ -28,7 +28,7 @@
 
 echo 'SEPARATING FILES TO TRAINING AND TEST FOLDERS'
 # P A R A M E T E R S #
-dir_to_split="$HOME/Downloads/archive/images"  # archive/images/ contains the downloaded images from kaggle
+dir_to_split="$HOME/Documents/side-projects/archive/images"  # archive/images/ contains the downloaded images from kaggle
 destination_dir="$HOME/Documents/side-projects/split_dataset"  # the new folder with the split data
 # # # # # # # # # # # #
 
@@ -54,11 +54,14 @@ do
   do
     c=$(($c+1))
     fullpath_image_to_copy="$directory_to_copy$image"
-    if [ $c -lt 501 ]
+    if [ $c -lt 200 ]
     then
       fullpath_image_destination="$training_destination$image"
-    else
+    elif [ $c -lt 300 ]
+    then
       fullpath_image_destination="$test_destination$image"
+    else
+      break;
     fi
     cp -v $fullpath_image_to_copy $fullpath_image_destination
   done
