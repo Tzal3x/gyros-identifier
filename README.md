@@ -10,7 +10,7 @@ _Editor note: The certainty whether this app contributes to society is controver
 
 The pretrained model used was the [MLImageClassifier](https://developer.apple.com/documentation/createml/mlimageclassifier) which was fine-tuned using the following custom dataset. 
 
-The dataset that was used was a mix of the [Food-101 dataset from Kaggle](https://www.kaggle.com/kmader/food41) and images of gyros that I downloaded from the internet, mostly from random sources.
+The dataset that was used was a mix of the [Food-101 dataset from Kaggle](https://www.kaggle.com/kmader/food41) and images of gyros that I downloaded from the internet, mostly from random sources which can be found [here](https://www.kaggle.com/tzalex/gyros-images).
 
 To split the dataset to Training and Test data I used the `dataset_creator.sh` bash script. Then I used the [CreateML](https://developer.apple.com/machine-learning/create-ml/) tool to train my model, and finally export it and add it to my XCode project.
 
