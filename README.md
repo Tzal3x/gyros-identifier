@@ -2,6 +2,8 @@
 
 In case you enter a shady restaurant, with suspicious prices and weird plate descriptions, not being able to verify that the food you ordered is a gyros... Fear no more! I made an app able to classify whether an image contains a [gyros](https://en.wikipedia.org/wiki/Gyros_(food)) or not.
 
+The idea stems from the clip of Jian Yang's "Hotdog/Not Hotdog" app from the Silicon Valley series. Here's the [clip](https://www.youtube.com/watch?v=vIci3C4JkL0).
+
 _Editor note: The certainty whether this app contributes to society is controversial._
 
 ## Boring tech details
