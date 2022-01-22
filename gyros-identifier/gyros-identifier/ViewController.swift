@@ -15,6 +15,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     let imageAlbumPicker = UIImagePickerController()
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var introLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,14 +69,17 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
 
     @IBAction func cameraAction(_ sender: Any) {
+        introLabel.isHidden = true
         imagePicker.sourceType = .camera
         present(imagePicker, animated: true, completion: nil)
     }
     
     
     @IBAction func loadImageAction(_ sender: Any) {
+        introLabel.isHidden = true
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
+        introLabel.isHidden = true
     }
     
     
