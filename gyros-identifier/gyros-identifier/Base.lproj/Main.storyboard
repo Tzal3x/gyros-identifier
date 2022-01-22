@@ -19,26 +19,35 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Du-eL-AjF">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Load a photo or take a picture of your food to find out whether it's a gyros or not!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugw-CL-JEX">
+                                <rect key="frame" x="20.5" y="270.5" width="373" height="86"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="6Du-eL-AjF" secondAttribute="bottom" id="9bs-oj-IKo"/>
                             <constraint firstItem="6Du-eL-AjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mfy-CK-2cy"/>
                             <constraint firstItem="6Du-eL-AjF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Xp2-qy-DLk"/>
+                            <constraint firstItem="ugw-CL-JEX" firstAttribute="width" secondItem="6Du-eL-AjF" secondAttribute="width" multiplier="0.9" id="hRw-o7-oCt"/>
+                            <constraint firstItem="ugw-CL-JEX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lUt-0r-3e6"/>
                             <constraint firstItem="6Du-eL-AjF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oLX-IH-F1F"/>
+                            <constraint firstItem="ugw-CL-JEX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.7" id="t1n-2E-OVL"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="hKK-G5-kF4">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="folder.fill" catalog="system" id="wL5-yf-3Kq" userLabel="Files">
-                            <color key="tintColor" red="0.85981797680412375" green="0.0" blue="0.042069080054323735" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="loadImageAction:" destination="BYZ-38-t0r" id="hnL-tP-fUg"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="camera.fill" catalog="system" id="OD3-5I-ige" userLabel="Camera">
-                            <color key="tintColor" red="0.85882353779999998" green="0.0" blue="0.043137259779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="cameraAction:" destination="BYZ-38-t0r" id="mEj-eq-VaA"/>
                             </connections>
@@ -47,6 +56,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="6Du-eL-AjF" id="vI7-uv-J2i"/>
+                        <outlet property="introLabel" destination="ugw-CL-JEX" id="vFK-yF-sxM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,8 +85,8 @@
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="folder.fill" catalog="system" width="128" height="97"/>
-        <systemColor name="tertiarySystemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
